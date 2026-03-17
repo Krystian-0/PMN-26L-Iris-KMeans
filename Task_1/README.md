@@ -5,20 +5,20 @@ Numer indeksu: 94803
 Grupa: 2 (Grupowanie przy użyciu algorytmu K-Means)
 
 ## 1. Krótka analiza danych (EDA)
-Zbiór danych Iris składa się z 150 próbek kwiatów, podzielonych po równo (po 50 sztuk) na 3 gatunki: Setosa, Versicolor oraz Virginica. Każda próbka opisana jest za pomocą 4 cech liczbowych: długości i szerokości działki kielicha (sepal) oraz długości i szerokości płatka (petal). 
+Zbiór danych Iris składa się z 150 próbek kwiatów, podzielonych po równo (po 50 sztuk) na 3 gatunki: Setosa, Versicolor oraz Virginica. Każda próbka opisana jest za pomocą 4 cech liczbowych: długości i szerokości działki kielicha (sepal) oraz długości i szerokości płatka. 
 
 
-Po wyświetleniu zauważamy, że cechy płatków mają większe odchylenie standardowe niż cechy kielicha, co może sugerować, że to one będą kluczowe przy rozróżnianiu gatunków.]
+Po wyświetleniu zauważamy, że cechy płatków mają większe odchylenie standardowe niż cechy kielicha, co może sugerować, że to one będą kluczowe przy rozróżnianiu gatunków.
 
 ## 2. Wyniki grupowania algorytmem K-Means
 Ponieważ K-Means jest algorytmem uczenia nienadzorowanego, model podzielił dane na k=3 klastry bazując wyłącznie na odległościach między punktami, nie znając rzeczywistych gatunków. 
 
 Aby umożliwić ocenę modelu za pomocą klasycznych metryk, zastosowałem podejście polegające na przypisaniu każdemu klastrowi takiej etykiety (gatunku), która występowała w nim najczęściej. Dzięki temu mogłem wyliczyć poniższe metryki:
 
-Accuracy (Dokładność): 0.8933
-Precision (Precyzja - średnia ważona): 0.9072
-Recall (Czułość - średnia ważona): 0.8933
-F1-Score: 0.8918
+* **Accuracy (Dokładność):** 0.8933
+* **Precision (Precyzja - średnia ważona):** 0.9072
+* **Recall (Czułość - średnia ważona):** 0.8933
+* **F1-Score:** 0.8918
 
 Ukazuje nam się tutaj świetny wynik na poziomie 89%, biorąc pod uwagę, że algorytm nie miał z góry podanych etykiet w procesie uczenia
 
